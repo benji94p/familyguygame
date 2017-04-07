@@ -1,8 +1,26 @@
+@font-face {
+    font-family: familyFont;
+    src: url(Famig___.TTF);
+}
 /* GENERAL */
 
 /* INTROGAME */
+#headerintro {
+    font-family: familyFont;
+    font-size: 100px;
+    text-align: center;
+}
+#start-btn {
+    font-family: familyFont;
+    height: 80px;
+    font-size: 40px;
 
+}
+#introgame {
+    text-align: center;
+    }
 /* CHARACTERSCENE */
+
 
 /* WEAPONSCENE */
 
@@ -16,7 +34,7 @@
 
 /*SCENE DISPLAY TRIGGER */
 #characterscene {
-    display: none;
+    display: ;
 }
 #weaponscene {
     display: none;
