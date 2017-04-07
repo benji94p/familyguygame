@@ -11,3 +11,22 @@
 /* INSTRUCTION */
 
 /* GAMESCENE */
+
+
+
+/*SCENE DISPLAY TRIGGER */
+#characterscene {
+    display: none;
+}
+#weaponscene {
+    display: none;
+}
+#weaponscene {
+    display: none;
+}
+#backgroundscene {
+    display: none;
+}
+#instructionscene {
+    display: none;
+}
