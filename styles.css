@@ -14,11 +14,24 @@
     font-family: familyFont;
     height: 80px;
     font-size: 40px;
-
+    margin-top: 400px;
 }
 #introgame {
     text-align: center;
     }
+
+.introheaderfade {
+    animation: introheaderfade 2s ease-out  ;
+}
+
+@keyframes introheaderfade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 /* CHARACTERSCENE */
 
 
@@ -32,7 +45,8 @@
 
 
 
-/*SCENE DISPLAY TRIGGER */
+/*SCENE DISPLAY TRIGGER
+
 #characterscene {
     display: ;
 }
@@ -48,3 +62,4 @@
 #instructionscene {
     display: none;
 }
+*/
