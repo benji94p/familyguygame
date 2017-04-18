@@ -9,12 +9,12 @@ let gamePage = document.querySelector("#gamescene");
 
 /* HIDE ALL THE PAGES DIV */
 
-firstPage.style.display = "";
+firstPage.style.display = "none";
 characterPage.style.display = "none";
 weaponPage.style.display = "none";
 backgroundPage.style.display = "none";
 instructionsPage.style.display = "none";
-gamePage.style.display = "none";
+gamePage.style.display = "";
 
 
 let startButton = document.querySelector("#start-btn");
