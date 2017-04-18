@@ -16,16 +16,7 @@ backgroundPage.style.display = "none";
 instructionsPage.style.display = "none";
 gamePage.style.display = "none";
 
-let headerIntro = document.querySelector ("#headerintro");
-headerIntro.style.display = "none";
 
-window.onload = firstFunction;
-function firstFunction () {
-    console.log("Showfirstdiv");
-    headerIntro.style.display = "";
-    headerIntro.classList.add("introheaderfade");
-
-}
 let startButton = document.querySelector("#start-btn");
 
 startButton.addEventListener("click", showCharacterScene);
