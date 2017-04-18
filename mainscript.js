@@ -1,27 +1,66 @@
 /* DECLARE DIV DIFFERENT PAGES */
 
 let firstPage = document.querySelector("#introgame");
-let characterPage = document.querySelector("#characterscene");
-let weaponPage = document.querySelector("#weaponscene");
-let backgroundPage = document.querySelector("#backgroundscene");
-let instructionsPage = document.querySelector("#instructionscene");
-let gamePage = document.querySelector("#gamescene");
+let mainPage = document.querySelector("#mainpage");
+
+let characterOne = document.querySelector("#player1");
+let characterTwo = document.querySelector("#player2");
+let weaponOne = document.querySelector("#weapon1");
+let weaponTwo = document.querySelector("#weapon2");
+
 
 /* HIDE ALL THE PAGES DIV */
 
-firstPage.style.display = "none";
-characterPage.style.display = "none";
-weaponPage.style.display = "none";
-backgroundPage.style.display = "none";
-instructionsPage.style.display = "none";
-gamePage.style.display = "";
-
+firstPage.style.display = "";
+mainPage.style.display = "none";
 
 let startButton = document.querySelector("#start-btn");
 
-startButton.addEventListener("click", showCharacterScene);
+startButton.addEventListener("click", showMainPage);
 
-function showCharacterScene () {
+function showMainPage () {
     firstPage.style.display = "none";
-    characterPage.style.display = "";
+    mainPage.style.display = "";
+    characterOne.style.display = "none";
+    characterTwo.style.display = "none";
+    weaponOne.style.display = "none";
+    weaponTwo.style.display = "none";
+    let instructions = document.querySelector ("#instructions");
+    instructions.innerHTML = "Choose your background";
+
+    let bgOne = document.querySelector("#bg1");
+    let bgTwo = document.querySelector("#bg2");
+    let bgThree = document.querySelector("#bg3");
+
+    bgOne.addEventListener ("click", showFirstBg);
+    bgTwo.addEventListener ("click", showSecondBg);
+    bgThree.addEventListener ("click", showThirdBg);
+
+    let bgdiv = document.querySelector ("#choose-bg");
+
+    function showFirstBg () {
+        bgdiv.style.display = "none";
+        document.getElementById("mainpage").classList.add( "mainpage1");
+        instructions.innerHTML = "Player One, choose your character !";
+        characterOne.style.display = "";
+        characterTwo.style.display = "";
+
+
+    }
+    function showSecondBg () {
+        document.getElementById("mainpage").classList.add( "mainpage2");
+        bgdiv.style.display = "none";
+        instructions.innerHTML = "Player One, choose your character !";
+        characterOne.style.display = "";
+        characterTwo.style.display = "";
+    }
+    function showThirdBg () {
+        document.getElementById("mainpage").classList.add( "mainpage3");
+        bgdiv.style.display = "none";
+        instructions.innerHTML = "Player One, choose your character !";
+        characterOne.style.display = "";
+        characterTwo.style.display = "";
+    }
+
 }
+

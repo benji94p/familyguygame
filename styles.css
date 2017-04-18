@@ -4,6 +4,7 @@
 }
 /* GENERAL */
 
+
 /* INTROGAME */
 
 #introgame {
@@ -15,7 +16,7 @@
     }
 
 #imageintro {
-    width: 65%;
+    width: 60%;
     margin: 0 auto;
 }
 #start-btn {
@@ -28,14 +29,41 @@
     width: 12%;
 
 }
-/* CHARACTERSCENE */
+/* MAINSCENE */
 
-#characterscene {
-    background-image: url(images/bgsetup.jpg);
-    background-size: cover;
-    height: 100%;
+#mainpage {
+    background-color: black;
+    height: 800px;
+    width: auto;
 }
-#instructions_player {
+
+#choose-bg {
+    text-align: center;
+}
+
+#choose-bg img {
+    margin-top: 250px;
+   max-height: 300px;
+}
+#choose-bg img:hover {
+    cursor: pointer;
+}
+#mainpage.mainpage1 {
+    background-image: url(images/Background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#mainpage.mainpage2 {
+    background-image: url(images/Background2.jpg);
+    background-size: cover;
+    position:relative;
+}
+#mainpage.mainpage3 {
+    background-image: url(images/Background1.jpg);
+    background-size: cover;
+}
+#instructions {
     text-align: center;
     font-family: familyFont;
     font-size: 50px;
@@ -45,9 +73,10 @@
 }
 .players {
     max-height: 300px;
-    margin-top: 0px;
     cursor: pointer;
+    margin-top: 250px;
 }
+
 .players:hover {
    animation: glowinganimation 1s ease-in infinite ;
 }
@@ -66,35 +95,7 @@
     margin-top: 300px;
     bottom: 0;
 }
-/* WEAPONSCENE */
 
-/* BGSCENE */
 
-/* INSTRUCTION */
 
-/* GAMESCENE */
 
-#gamescene {
-    background-image: url(images/Background1.jpg);
-    background-size: contain;
-
-}
-
-/*SCENE DISPLAY TRIGGER
-
-#characterscene {
-    display: ;
-}
-#weaponscene {
-    display: none;
-}
-#weaponscene {
-    display: none;
-}
-#backgroundscene {
-    display: none;
-}
-#instructionscene {
-    display: none;
-}
-*/
