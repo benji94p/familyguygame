@@ -5,6 +5,8 @@ let mainPage = document.querySelector("#mainpage");
 
 let characterOne = document.querySelector("#player1");
 let characterTwo = document.querySelector("#player2");
+let characterThree = document.querySelector ("#player3");
+let characterFour = document.querySelector ("#player4");
 let weaponOne = document.querySelector("#weapon1");
 let weaponTwo = document.querySelector("#weapon2");
 
@@ -23,6 +25,8 @@ function showMainPage () {
     mainPage.style.display = "";
     characterOne.style.display = "none";
     characterTwo.style.display = "none";
+    characterThree.style.display ="none";
+    characterFour.style.display ="none";
     weaponOne.style.display = "none";
     weaponTwo.style.display = "none";
     let instructions = document.querySelector ("#instructions");
@@ -40,8 +44,8 @@ function showMainPage () {
     let weaponThree = document.querySelector ("#weapon3");
     let weaponFour = document.querySelector ("#weapon4");
 
-    weaponThree.style.display = "";
-    weaponFour.style.display = "";
+    weaponThree.style.display = "none";
+    weaponFour.style.display = "none";
 
     function showFirstBg () {
         bgdiv.style.display = "none";
@@ -49,6 +53,8 @@ function showMainPage () {
         instructions.innerHTML = "Choose your weapon";
         weaponOne.style.display = "";
         weaponTwo.style.display = "";
+        weaponThree.style.display = "";
+        weaponFour.style.display = "";
 
 
 
@@ -59,6 +65,8 @@ function showMainPage () {
         instructions.innerHTML = "Choose your weapon";
         weaponOne.style.display = "";
         weaponTwo.style.display = "";
+        weaponThree.style.display = "";
+        weaponFour.style.display = "";
     }
     function showThirdBg () {
         document.getElementById("mainpage").classList.add( "mainpage3");
@@ -66,6 +74,8 @@ function showMainPage () {
         instructions.innerHTML = "Choose your weapon";
         weaponOne.style.display = "";
         weaponTwo.style.display = "";
+        weaponThree.style.display = "";
+        weaponFour.style.display = "";
     }
 
     weaponOne.addEventListener ("click", peterGun);
