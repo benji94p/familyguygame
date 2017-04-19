@@ -153,5 +153,28 @@
 #p2players {
     margin-left: 1000px;
 }
-
+#next_button {
+    position: absolute;
+    bottom: 30px;
+    left: 45%;
+}
+#next_button:hover {
+    cursor: pointer;
+    width: 12%;
+}
+#play-button {
+    position: absolute;
+    bottom: 30px;
+    left: 45%;
+}
+#play-button:hover {
+    cursor: pointer;
+    width: 12%;
+}
+#instructionsreal {
+    font-size: 35px;
+    text-align: center;
+    font-family: impact;
+    color:white;
+}
 
