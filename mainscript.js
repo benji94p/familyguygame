@@ -69,12 +69,18 @@ function showMainPage () {
     }
 
     weaponOne.addEventListener ("click", peterGun);
+    weaponThree.addEventListener ("click", dogGun);
 
     function peterGun () {
-        let oneParagraphe = document.querySelector ("#p1");
-        weaponTwo.style.display = "none";
-        weaponOne.style.display = "none";
         characterOne.style.display = "";
+        weaponOne.style.display = "none";
+        weaponTwo.style.display = "none";
+    }
+
+    function dogGun () {
+        characterTwo.style.display = "";
+        weaponThree.style.display = "none";
+        weaponFour.style.display = "none";
     }
 
 }

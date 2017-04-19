@@ -86,6 +86,17 @@
     cursor: pointer;
     margin-top: 200px;
 }
+#weaponfirst {
+    display: block;
+    float: left;
+    margin-left: 100px;
+}
+#weaponsecond {
+    display: block;
+    position: relative;
+    float: right;
+    margin-right: 100px;
+}
 
 
 .weapon:hover {
