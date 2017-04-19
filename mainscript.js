@@ -37,13 +37,19 @@ function showMainPage () {
     bgThree.addEventListener ("click", showThirdBg);
 
     let bgdiv = document.querySelector ("#choose-bg");
+    let weaponThree = document.querySelector ("#weapon3");
+    let weaponFour = document.querySelector ("#weapon4");
+
+    weaponThree.style.display = "none";
+    weaponFour.style.display = "none";
 
     function showFirstBg () {
         bgdiv.style.display = "none";
         document.getElementById("mainpage").classList.add( "mainpage1");
         instructions.innerHTML = "Choose your weapon";
-        characterOne.style.display = "";
-        characterTwo.style.display = "";
+        weaponOne.style.display = "";
+        weaponTwo.style.display = "";
+
 
 
     }
@@ -51,15 +57,25 @@ function showMainPage () {
         document.getElementById("mainpage").classList.add( "mainpage2");
         bgdiv.style.display = "none";
         instructions.innerHTML = "Choose your weapon";
-        characterOne.style.display = "";
-        characterTwo.style.display = "";
+        weaponOne.style.display = "";
+        weaponTwo.style.display = "";
     }
     function showThirdBg () {
         document.getElementById("mainpage").classList.add( "mainpage3");
         bgdiv.style.display = "none";
         instructions.innerHTML = "Choose your weapon";
+        weaponOne.style.display = "";
+        weaponTwo.style.display = "";
+    }
+
+    weaponOne.addEventListener ("click", peterGun);
+
+    function peterGun () {
+        let oneParagraphe = document.querySelector ("#p1");
+        oneParagraphe.style.display = "none";
+        weaponTwo.style.display = "none";
+        weaponOne.style.display = "none";
         characterOne.style.display = "";
-        characterTwo.style.display = "";
     }
 
 }

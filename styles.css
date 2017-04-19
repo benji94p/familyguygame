@@ -9,8 +9,8 @@
 
 #introgame {
     text-align: center;
-     /*background-image:url(images/bgsetup.jpg);*/
-    background-color: black;
+     background-image:url(images/bgTest.jpg);
+   /* background-color: black;*/
     background-size:cover;
     display: flex;
     flex-direction: column;
@@ -79,13 +79,18 @@
     margin-top: 0px;
     padding-top: 50px
 }
-.players {
-    max-height: 300px;
+.weapon {
+    max-height: 150px;
     cursor: pointer;
-    margin-top: 250px;
+    margin-top: 200px;
+}
+#weapon_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.players:hover {
+.weapon:hover {
    animation: glowinganimation 1s ease-in infinite ;
 }
 @keyframes glowinganimation {
@@ -105,12 +110,13 @@
 }
 
 .p_container {
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 .p_players {
-    font-size: 30px;
+    font-size: 40px;
     color: black;
     font-family: familyFont;
 }
