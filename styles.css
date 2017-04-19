@@ -129,6 +129,29 @@
     color: black;
     font-family: familyFont;
 }
+#weapon_container.players {
+    max-height: 200px;
+}
+#player1 {
+    position: absolute;
+    z-index: 1;
+}
+#player2 {
+    position: absolute;
+    z-index: 2;
+}
 
+#player3 {
+        max-width: 400px;
+        position: absolute;
+    z-index: 3;
+}
+#player4 {
+    position: absolute;
+    z-index: 4;
+}
+#p2players {
+    margin-left: 1000px;
+}
 
 

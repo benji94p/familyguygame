@@ -79,16 +79,31 @@ function showMainPage () {
     }
 
     weaponOne.addEventListener ("click", peterGun);
+    weaponTwo.addEventListener ("click", peterBazooka);
     weaponThree.addEventListener ("click", dogGun);
+    weaponFour.addEventListener ("click", dogBazooka);
 
     function peterGun () {
         characterOne.style.display = "";
+
+        weaponOne.style.display = "none";
+        weaponTwo.style.display = "none";
+    }
+
+    function peterBazooka () {
+        characterTwo.style.display = "";
         weaponOne.style.display = "none";
         weaponTwo.style.display = "none";
     }
 
     function dogGun () {
-        characterTwo.style.display = "";
+        characterThree.style.display = "";
+        weaponThree.style.display = "none";
+        weaponFour.style.display = "none";
+    }
+
+    function dogBazooka () {
+        characterFour.style.display = "";
         weaponThree.style.display = "none";
         weaponFour.style.display = "none";
     }
