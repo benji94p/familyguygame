@@ -46,7 +46,9 @@
 
 #choose-bg img {
     margin-top: 100px;
-   max-height: 250px;
+    max-height: 250px;
+    width: 440px;
+    height: 440px;
 }
 
 #choose-bg img:hover {
