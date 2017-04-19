@@ -41,7 +41,7 @@ function showMainPage () {
     function showFirstBg () {
         bgdiv.style.display = "none";
         document.getElementById("mainpage").classList.add( "mainpage1");
-        instructions.innerHTML = "Player One, choose your character !";
+        instructions.innerHTML = "Choose your weapon";
         characterOne.style.display = "";
         characterTwo.style.display = "";
 
@@ -50,14 +50,14 @@ function showMainPage () {
     function showSecondBg () {
         document.getElementById("mainpage").classList.add( "mainpage2");
         bgdiv.style.display = "none";
-        instructions.innerHTML = "Player One, choose your character !";
+        instructions.innerHTML = "Choose your weapon";
         characterOne.style.display = "";
         characterTwo.style.display = "";
     }
     function showThirdBg () {
         document.getElementById("mainpage").classList.add( "mainpage3");
         bgdiv.style.display = "none";
-        instructions.innerHTML = "Player One, choose your character !";
+        instructions.innerHTML = "Choose your weapon";
         characterOne.style.display = "";
         characterTwo.style.display = "";
     }
