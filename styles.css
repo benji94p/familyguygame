@@ -79,18 +79,14 @@
     font-size: 50px;
     color: white;
     margin-top: 0px;
-    padding-top: 50px
+    padding-top: 50px;
 }
 .weapon {
     max-height: 150px;
     cursor: pointer;
     margin-top: 200px;
 }
-#weapon_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+
 
 .weapon:hover {
    animation: glowinganimation 1s ease-in infinite ;

@@ -40,8 +40,8 @@ function showMainPage () {
     let weaponThree = document.querySelector ("#weapon3");
     let weaponFour = document.querySelector ("#weapon4");
 
-    weaponThree.style.display = "none";
-    weaponFour.style.display = "none";
+    weaponThree.style.display = "";
+    weaponFour.style.display = "";
 
     function showFirstBg () {
         bgdiv.style.display = "none";
@@ -72,7 +72,6 @@ function showMainPage () {
 
     function peterGun () {
         let oneParagraphe = document.querySelector ("#p1");
-        oneParagraphe.style.display = "none";
         weaponTwo.style.display = "none";
         weaponOne.style.display = "none";
         characterOne.style.display = "";
