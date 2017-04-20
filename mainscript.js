@@ -134,16 +134,14 @@ function showMainPage () {
         instructions.style.visibility = "hidden";
         instrureal.style.visibility = "hidden";
         dylanSound.play();
-        function StopSoundRandom(dylanSound) {
-    var sound       = dylanSound;
-    var duration    = sound.duration;
-    var random      = Math.floor(Math.random() * duration) + 1
-    window.setTimeout(function(){
+        var sound       = dylanSound;
+        var duration    = sound.duration;
+        var random      = Math.floor(Math.random() * duration) + 1
+        window.setTimeout(function(){
         dylanSound.pause();
-    },random*1000);
-}
+        },random*1000);}
 
-    }
+
 
 }
 
