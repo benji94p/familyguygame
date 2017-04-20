@@ -186,30 +186,28 @@
     color:white;
 }
 #bullet1 {
-        left: 23%;
-    position: fixed;
+    left: 23%;
     top: 70%;
-    visibility: hidden;
+
 }
 
 #bullet2 {
     left: 26%;
     position: fixed;
     top: 62%;
-     visibility: hidden;
+
 }
 #bullet3 {
     right: 37%;
     position: fixed;
     top: 70%;
-     visibility: hidden;
+
 }
 
 #bullet4 {
     right: 40%;
     position: fixed;
     top: 62%;
-     visibility: hidden;
 }
 
 

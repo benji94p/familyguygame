@@ -11,6 +11,10 @@ let weaponOne = document.querySelector("#weapon1");
 let weaponTwo = document.querySelector("#weapon2");
 let instrureal = document.querySelector ("#instructionsreal");
 let dylanSound = document.querySelector ("#dylan");
+let bulletOne = document.querySelector ("#bullet1");
+let bulletTwo = document.querySelector ("#bullet2");
+let bulletThree = document.querySelector ("#bullet3");
+let bulletFour = document.querySelector ("#bullet4");
 /* HIDE ALL THE PAGES DIV */
 
 firstPage.style.display = "";
@@ -27,6 +31,10 @@ startButton.addEventListener("click", showMainPage);
 function showMainPage () {
     firstPage.style.display = "none";
     mainPage.style.display = "";
+    bulletOne.style.display = "none";
+    bulletTwo.style.display = "none";
+    bulletThree.style.display = "none";
+    bulletFour.style.display = "none";
     playButton.style.display ="none";
     characterOne.style.display = "none";
     characterTwo.style.display = "none";
@@ -96,12 +104,14 @@ function showMainPage () {
 
         weaponOne.style.display = "none";
         weaponTwo.style.display = "none";
+
     }
 
     function peterBazooka () {
         characterTwo.style.display = "";
         weaponOne.style.display = "none";
         weaponTwo.style.display = "none";
+
     }
 
     function dogGun () {
@@ -116,7 +126,9 @@ function showMainPage () {
         weaponThree.style.display = "none";
         weaponFour.style.display = "none";
         nextButton.style.display = "";
-    }
+    };
+
+
 
     nextButton.addEventListener("click", instructionsShow);
 
@@ -139,13 +151,40 @@ function showMainPage () {
         var random      = Math.floor(Math.random() * duration) + 1
         window.setTimeout(function(){
         dylanSound.pause();
+        setWeaponEvents();
         },random*1000);}
 
-    dylanSound.addEventListener("pause", onceSoundDone);
 
-    function onceSoundDone () {
-
-    }
 
 }
+    function setWeaponEvents () {
+         document.addEventListener("keydown", function(e){
+            var keyCode = e.keyCode;
+             if(keyCode==65) {
+                console.log("You hit the enter key.");
+                 if (weaponOne ="click") {
+                        console.log("aze");
+                       bulletOne.style.display = "";
+                    }
+                    else if (weaponTwo = "click") {
+                        console.log("zffz");
+
+                    }
+
+             }
+            if(keyCode==76) {
+            console.log("You hit the enter key.");
+            if (weaponThree ="click") {
+                        console.log("aze");
+
+                    }
+                    else if (weaponFour = "click") {
+                        console.log("zffz");
+
+                    }
+                            }
+
+    }, false);
+        }
+
 
