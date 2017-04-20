@@ -141,7 +141,11 @@ function showMainPage () {
         dylanSound.pause();
         },random*1000);}
 
+    dylanSound.addEventListener("pause", onceSoundDone);
 
+    function onceSoundDone () {
+
+    }
 
 }
 
