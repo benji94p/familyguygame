@@ -139,9 +139,21 @@ function showMainPage () {
         var random      = Math.floor(Math.random() * duration) + 1
         window.setTimeout(function(){
         dylanSound.pause();
+        setWeaponEvents();
         },random*1000);}
 
 
-
 }
+    function setWeaponEvents () {
+         document.addEventListener("keydown", function(e){
+            var keyCode = e.keyCode;
+             if(keyCode==65) {
+                alert("You hit the enter key.");
+             }
+            if(keyCode==76) {
+            alert("You hit the enter key.");
+                            }
+
+    }, false);
+        }
 
