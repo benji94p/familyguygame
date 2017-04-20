@@ -161,15 +161,7 @@ function showMainPage () {
          document.addEventListener("keydown", function(e){
             var keyCode = e.keyCode;
              if(keyCode==65) {
-                console.log("You hit the enter key.");
-                 if (weaponOne ="click") {
-                        console.log("aze");
-                       bulletOne.style.display = "";
-                    }
-                    else if (weaponTwo = "click") {
-                        console.log("zffz");
 
-                    }
 
              }
             if(keyCode==76) {
